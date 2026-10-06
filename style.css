@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #00430f9d;
+  height: 100px;
+}
+.container {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 100px;
+}
+ul {
+  display: flex;
+  gap: 30px;
+}
+ul a {
+  color: white;
+  background-color: lightslategray;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+ul a:hover {
+  color: lightgoldenrodyellow;
+}
+#home {
+  background: url(./sapce.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+}
+.badge {
+  position: relative;
+}
+.badge::after {
+  content: 20;
+  background-color: red;
+  border-radius: 50px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  overflow: hidden;
+}
+
+.line::after {
+  content: 10px;
+  width: 0;
+  height: 34px;
+  position: absolute;
+  left: 55px;
+  bottom: 0;
+  background: linear-gradient(#ffffff27, b#ffffffb9, #ffffff18);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.line:hover::after {
+  left: 0;
+  width: 107px;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 80%;
+}
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-img {
+  height: 80%;
+}
+
+.flip-scene {
+  width: 300px;
+  height: 300px;
+  perspective: 300px;
+}
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.flip-card > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+.flip-front {
+  background-color: red;
+}
+.flip-back {
+  background-color: aqua;
+  transform: rotateY(180deg);
+  background-image: url();
+}
+
+#famili {
+  background: url(./sapce.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  background: url(https://img.magnific.com/free-photo/blue-white-starry-night-sky_417767-124.jpg?semt=ais_hybrid&w=740&q=80);
+}
+
+.flip-scene {
+  width: 300px;
+  height: 300px;
+  perspective: 300px;
+}
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.flip-card > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+.flip-front {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLz06uYX6QC1b-pJUeU6ydM8xmC7q5fF3jCso92qbjIaCvxkF51mB4vzs&s=10) center/cover;
+
+}
+.flip-back {
+  background-color: aqua;
+  transform: rotateY(180deg);
+}
+.quti{
+  width: 100%;
+  height: 100VH;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+button{
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: none;
+  background-color: green;
+  color: white;
+  transition: all o.2s ease;
+}
+button:hover{
+  transform: translateY(-15px);
+  background: teal;
+}
